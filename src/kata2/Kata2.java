@@ -5,11 +5,11 @@ import java.util.Map;
 public class Kata2 {
 
     public static void main(String[] args) {
-        Integer[] data = new Integer[] {52,-12,1,0,-6,7,33,657,-2,2,1,1,0,33,53};
-        Histogram<Integer> histo = new Histogram<>(data);
-        Map<Integer,Integer> histogr = histo.getHistogram();
+        String[] data = new String[] {"Mario", "Pepe", "María", "Pepe", "Pepe", "Mario"};
+        Histogram<String> histo = new Histogram<>(data);
+        Map<String,Integer> histogr = histo.getHistogram();
         
-        for (Integer key : histogr.keySet()) {
+        for (String key : histogr.keySet()) {
             System.out.println(key + " ==> " + histogr.get(key));   
         }
     }
